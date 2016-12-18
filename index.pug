@@ -31,3 +31,13 @@ html(lang="en")
           a.item(href="/blog") Blog
           a.item(href="https://github.com/Yakima-Teng/") GitHub
           a.item(href="https://book.douban.com/people/cleveryun/") Douban
+    script.
+      window.onload = function () {
+        document.addEventListener('touchmove', touch, false)
+        function touch (e) {
+          e = e || window.event
+          if (e.type === 'touchmove') {
+            e.preventDefault()
+          }
+        }
+      }
