@@ -22,10 +22,10 @@ gulp.task('sass', () => {
   return gulp.src('./styles/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(autoPrefixer({
-      browsers: [ 'last 20 versions', '> 1%', 'ie 8', 'ie 7' ],
+      browsers: [ 'last 20 versions' ],
       cascade: true
     }))
-    .pipe(gulp.dest('./styles'))
+    // .pipe(gulp.dest('./styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./styles'))
     .pipe(browserSync.stream())
