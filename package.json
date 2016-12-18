@@ -1,0 +1,34 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Yakima Teng's home page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yakima-Teng/yakima-teng.github.io.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "browsersync",
+    "pug"
+  ],
+  "author": "Yakima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yakima-Teng/yakima-teng.github.io/issues"
+  },
+  "homepage": "https://github.com/Yakima-Teng/yakima-teng.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0"
+  }
+}
