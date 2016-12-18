@@ -2,16 +2,15 @@
  * Base structure
  */
 
-html,
-body {
+html, body {
   height: 100%;
-  background-color: #bbc7c2;
   font: 16px/2 "Microsoft Yahei", "华文细黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body {
   margin: 0;
   color: #333;
   text-align: center;
+  background-color: #bbc7c2;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
