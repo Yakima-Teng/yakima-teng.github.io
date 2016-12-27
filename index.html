@@ -2,8 +2,8 @@
   if (document.addEventListener) {
     document.addEventListener('touchmove', touch, false)
   } else {
-    // for IE8
-    document.attachEvent('onclick', touch)
+    // 手机端IE8浏览器？估计都不存在，不需要用attachEvent处理其ontouchmove
+    // document.attachEvent('ontouchmove', touch)
   }
   
   function touch (e) {
