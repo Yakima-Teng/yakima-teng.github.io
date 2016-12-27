@@ -34,7 +34,13 @@ html(lang="en")
           a.item(href="https://book.douban.com/people/cleveryun/") Douban
     script.
       window.onload = function () {
-        document.addEventListener('touchmove', touch, false)
+        if (document.addEventListener) {
+          document.addEventListener('touchmove', touch, false)
+        } else {
+          // for IE8
+          document.attachEvent('onclick', touch)
+        }
+        
         function touch (e) {
           e = e || window.event
           if (e.type === 'touchmove') {

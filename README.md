@@ -2,6 +2,10 @@
 
 Please visit: http://www.orzzone.com.
 
+样式已兼容至IE8。
+JS已兼容至IE8。
+已去除手机端页面随手势滑动的问题。
+
 ## License
 
 MIT
